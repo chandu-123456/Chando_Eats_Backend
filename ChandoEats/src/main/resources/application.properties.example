@@ -1,9 +1,9 @@
 spring.application.name=ChandoEats
 
 # PostgreSQL (replace with your actual values)
-spring.datasource.url=jdbc:postgresql://<DB_HOST>/<DB_NAME>?sslmode=require
-spring.datasource.username=<DB_USERNAME>
-spring.datasource.password=<DB_PASSWORD>
+spring.datasource.url=${SPRING_DATASOURCE_URL}
+spring.datasource.username=${SPRING_DATASOURCE_USERNAME}
+spring.datasource.password=${SPRING_DATASOURCE_PASSWORD}
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
 spring.jpa.show-sql=true
@@ -14,8 +14,8 @@ spring.datasource.hikari.minimum-idle=1
 # Gmail SMTP
 spring.mail.host=smtp.gmail.com
 spring.mail.port=587
-spring.mail.username=<YOUR_EMAIL>
-spring.mail.password=<GMAIL_APP_PASSWORD>
+spring.mail.username=${SPRING_DATASOURCE_USERNAME}
+spring.mail.password=${SPRING_DATASOURCE_PASSWORD}
 spring.mail.properties.mail.smtp.auth=true
 spring.mail.properties.mail.smtp.starttls.enable=true
 

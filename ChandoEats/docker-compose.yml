@@ -6,6 +6,8 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: chandoeats-backend
+    env_file:
+      - .env
     ports:
       - "8080:8080"
     environment:
