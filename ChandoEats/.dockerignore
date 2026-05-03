@@ -1,0 +1,19 @@
+# Maven build artifacts
+target/
+
+# IDE / OS files
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Docker files themselves
+.dockerignore
+
+# Logs
+*.log
+logs/
